@@ -1,0 +1,151 @@
+/* Reset basic elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Ensure the whole page takes up at least full screen height */
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header & Footer */
+header, footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #1e1e1e;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #57f0ed;  /* New color */
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Review Category Divisions on Homepage */
+.review-category {
+  margin-bottom: 30px; /* Tightened spacing */
+}
+
+.review-category h2 {
+  border-bottom: 2px solid #57f0ed;  /* New color */
+  padding-bottom: 5px;
+  margin-bottom: 10px; /* Reduced margin */
+}
+
+/* Review Preview */
+.review-preview {
+  background-color: #1e1e1e;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+  text-align: left; /* Text alignment inside preview */
+  display: block;
+}
+
+.review-preview h3 a {
+  color: #57f0ed;  /* New color */
+  text-decoration: none;
+}
+
+.review-preview h3 a:hover {
+  text-decoration: underline;
+}
+
+/* Review Sections in Detailed Review Pages */
+.review-section {
+  margin-bottom: 30px; /* Reduced spacing between sections */
+}
+
+.review-section h2 {
+  border-bottom: 1px solid #57f0ed;  /* New color */
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+/* Review Content - Left align text inside, but center section */
+.review-content {
+  background-color: #1e1e1e;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: left; /* Left-aligned text */
+  margin-bottom: 20px; /* Tightened margin between content blocks */
+}
+
+/* Footer stays at the bottom */
+.footer {
+  background-color: #222;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  margin-top: auto;
+  text-align: center;
+}
+
+.footer a {
+  color: #57f0ed;  /* New color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Image Styling - Centers and scales images */
+img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  border-radius: 10px;
+}
+.spoiler {
+  background-color: #2b2d31;
+  color: #2b2d31; /* Initially hides text */
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+
+.spoiler:hover {
+  color: white; /* Reveals text on hover */
+}
